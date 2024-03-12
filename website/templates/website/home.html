@@ -1,0 +1,30 @@
+{% extends "website/base.html" %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+    {% block content %}
+    <div class="container">
+    <h3 class='my-5 bold text-center'>WELCOME TO EHKOITA</h3>
+</div>
+{% comment %} side show {% endcomment %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'website/images/profile.jpg' %}" class="d-block mx-auto" style="max-width: 7000%; max-height: 500px;" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'website/images/man.jpg' %}" class="d-block mx-auto" style="max-width: 7000%; max-height: 500px;" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'website/images/work.jpg' %}" class="d-block mx-auto" style="max-width: 7000%; max-height: 500px;" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'website/images/work.jpg' %}" class="d-block mx-auto" style="max-width: 7000%; max-height: 500px;" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'website/images/work.jpg' %}" class="d-block mx-auto" style="max-width: 7000%; max-height: 500px;" alt="...">
+        </div>
+    </div>
+</div>
+
+<div class="server text-center"><h3>SErvers offered</h3></div>
+    {% endblock content %}
